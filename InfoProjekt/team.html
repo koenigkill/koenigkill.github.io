@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Jesse König, Eduard Antoni">
+<meta name="description" content="Homepage zum Website-Projekt des Informatik-Kurses der neunten Klasse am                                   Johannes-Kepler-Gymnasium Ibbenbüren">
+<meta name="keywords" content="Website-Projekt, Jesse, Jesse König, Eduard, Eduard Antoni, Kepler,                                        Johannes-Kepler-Gymnasium, Informatik">
+<title>HTML Projekt</title>
+<link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+    </nav>
+
+	<br>
+    <br>
+    <p id="team-einleitung">Wir, Jesse König und Eduard Antoni haben im Rahmen eines Projekts in unserem Informatikkurs diese Website erstellt. Im nachfolgendem Stellen wir uns kurz selber vor. Die Projekte unseren Mitschüler findet man <a href="projekte.html">hier</a>.</p>
+    
+    <section>
+        <article class="main-article">
+            <p class="Überschrift">Jesse König</p>
+                <p class="Inhalt">Ich bin Jesse und gehe in die neunte Klasse des Johannes-Kepler-Gymnasiums. Ich gucke gerne Serien oder spiele Computerspiele, außerdem fahre ich gerne Mountainbike. Ich bin sowie Eduard 15 Jahre alt.</p>
+        </article>
+        <article name="Eduard" class="main-article">
+            <p class="Überschrift">Eduard Antoni</p>
+                <p class="Inhalt">
+                    Ich bin Eduard und habe zusammen mit Jesse diese Seite gestaltet.Ich bin 15 Jahre alt und besuche sowie Jesse die 9.Klasse des Johannes-Kepler-Gymnasiums.Zu meinen Hobbys zählen einerseits Serien/Filme gucken sowie sich mit Freunden zutreffen und zu chillen.Zudem interessiere ich mich sehr für Geschichte und Musik.</p>
+        </article>
+        <article class="main-article">
+            <p class="Überschrift">Musikbeispiel: Alligatoah</p>
+                <p class="Inhalt">
+                    Da wir beide gerne den deutschen Musiker Alligatoah hören habe ich unten einen kleinen Button eingefügt der das Lied abspielt.
+                </p>
+                <div class="audio">
+                <audio id="Alligatoah">
+                    <source src="musik/mikl.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="aud_play_pause()">Musik ist keine Lösung | Start or Pause</button>
+                    <script>
+                        function aud_play_pause() 
+                        {
+                            var Audio = document.getElementById("Alligatoah");
+                            if (Audio.paused) 
+                            {
+                            Audio.play();
+                            } 
+                                else 
+                                    {
+                                    Audio.pause();
+                                    }
+                        }
+                    </script>
+                </div>
+        </article>
+    </section>
+</body>
+</html>

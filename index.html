@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="koenigkill,Synaps" />
+    <meta name="description" content="Personal website by koenigkill" />
+    <meta charset="UTF-8" />
+    <meta name="author" content="koenigkill" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+    <script language="javascript" type="text/javascript">
+
+    document.oncontextmenu=RightMouseDown;
+    document.onmousedown = mouseDown; 
+
+
+
+    function mouseDown(e) {
+        if (e.which==3) {//righClick
+            alert("Fick dich du elendiger Rechtsklicker!");
+        }
+    }
+
+
+    function RightMouseDown() { return false; }
+
+    </script>
+    <title>koenigkill</title>
+  </head>
+  <body>
+    <div align="center">
+    <canvas id="myCanvas"></canvas>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <br>
+    <a href="/InfoProjekt" style="align: center;">Informatikwebsite</a>
+    <br>
+    <a href="/serien" style="align: center;">Serienkalender</a>
+    <br>
+    </div>
+  </body>
+</html>
